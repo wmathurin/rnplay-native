@@ -7,13 +7,17 @@ var {
   View,
 } = React;
 
+var Colors = require('../Utilities/Colors');
+
 class Spinner extends React.Component {
   render() {
     if (this.props.isLoading) {
       return (
-        <View style={{flex: 1, alignItems: 'center'}}>
-          <ProgressBarAndroid styleAttr="Large"/>
-        </View>
+        <ProgressBarAndroid
+          style={{ flex: 1 }}
+          styleAttr="Large"
+          color={Colors.tintColor}
+        />
       );
     } else {
       return ( <View /> );
