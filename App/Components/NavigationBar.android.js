@@ -13,7 +13,7 @@ var NavigationBar = React.createClass({
     return (
       <ToolbarAndroid
         title={this.props.title}
-        navIcon={require("../../assets/ic_menu_white_24dp")}
+        navIcon={require("../../assets/ic_menu_white_24dp.png")}
         onActionSelected={this.onActionSelected}
         titleColor="white"
         onIconClicked={this.props.handleNavIconTap}

@@ -25,7 +25,7 @@ var BarCodeReader = React.createClass({
         <ToolbarAndroid
           title='Close'
           titleColor="white"
-          navIcon={require("../../assets/ic_clear_white_36dp")}
+          navIcon={require("../../assets/ic_clear_white_36dp.png")}
           onIconClicked={this.props.onClose}
           style={styles.toolbarAndroid} />
         <BarcodeScanner
