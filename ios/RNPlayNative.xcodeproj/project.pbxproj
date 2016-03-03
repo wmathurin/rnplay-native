@@ -22,11 +22,8 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		2579C750D24C4100B55A5E12 /* libRNUserDefaultsIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEAFAD5D3644D9DB3D6A21E /* libRNUserDefaultsIOS.a */; };
 		421745301C8802F800D8C9E7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 425DE1E51C88018B0050BA5C /* libz.tbd */; };
-		421745521C88070C00D8C9E7 /* AppLoadingView.h in Sources */ = {isa = PBXBuildFile; fileRef = 4217454C1C88070C00D8C9E7 /* AppLoadingView.h */; };
 		421745531C88070C00D8C9E7 /* AppLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4217454D1C88070C00D8C9E7 /* AppLoadingView.m */; };
-		421745541C88070C00D8C9E7 /* AppReloader.h in Sources */ = {isa = PBXBuildFile; fileRef = 4217454E1C88070C00D8C9E7 /* AppReloader.h */; };
 		421745551C88070C00D8C9E7 /* AppReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4217454F1C88070C00D8C9E7 /* AppReloader.m */; };
-		421745561C88070C00D8C9E7 /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 421745501C88070C00D8C9E7 /* ViewController.h */; };
 		421745571C88070C00D8C9E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421745511C88070C00D8C9E7 /* ViewController.m */; };
 		4217455B1C88082B00D8C9E7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421745591C88082B00D8C9E7 /* Fabric.framework */; };
 		4217455C1C88082B00D8C9E7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4217455A1C88082B00D8C9E7 /* Crashlytics.framework */; };
@@ -285,9 +282,10 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				554162A41C88C12C00F56312 /* AppReloader */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -335,6 +333,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		554162A41C88C12C00F56312 /* AppReloader */ = {
+			isa = PBXGroup;
+			children = (
+				4217454C1C88070C00D8C9E7 /* AppLoadingView.h */,
+				4217454D1C88070C00D8C9E7 /* AppLoadingView.m */,
+				4217454E1C88070C00D8C9E7 /* AppReloader.h */,
+				4217454F1C88070C00D8C9E7 /* AppReloader.m */,
+				421745501C88070C00D8C9E7 /* ViewController.h */,
+				421745511C88070C00D8C9E7 /* ViewController.m */,
+			);
+			name = AppReloader;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,13 +386,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				4217454C1C88070C00D8C9E7 /* AppLoadingView.h */,
-				4217454D1C88070C00D8C9E7 /* AppLoadingView.m */,
-				4217454E1C88070C00D8C9E7 /* AppReloader.h */,
-				4217454F1C88070C00D8C9E7 /* AppReloader.m */,
-				421745501C88070C00D8C9E7 /* ViewController.h */,
-				421745511C88070C00D8C9E7 /* ViewController.m */,
-				425DE1E51C88018B0050BA5C /* libz.tbd */,
 				13B07FAE1A68108700A75B9A /* RNPlayNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -402,6 +406,7 @@
 		ACE55141637447BC896A6090 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				425DE1E51C88018B0050BA5C /* libz.tbd */,
 				421745591C88082B00D8C9E7 /* Fabric.framework */,
 				4217455A1C88082B00D8C9E7 /* Crashlytics.framework */,
 				168753F0A6EB470787219C73 /* Entypo.ttf */,
@@ -692,11 +697,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421745521C88070C00D8C9E7 /* AppLoadingView.h in Sources */,
 				421745531C88070C00D8C9E7 /* AppLoadingView.m in Sources */,
-				421745541C88070C00D8C9E7 /* AppReloader.h in Sources */,
 				421745551C88070C00D8C9E7 /* AppReloader.m in Sources */,
-				421745561C88070C00D8C9E7 /* ViewController.h in Sources */,
 				421745571C88070C00D8C9E7 /* ViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
