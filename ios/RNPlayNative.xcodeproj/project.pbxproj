@@ -28,6 +28,7 @@
 		4217455B1C88082B00D8C9E7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421745591C88082B00D8C9E7 /* Fabric.framework */; };
 		4217455C1C88082B00D8C9E7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4217455A1C88082B00D8C9E7 /* Crashlytics.framework */; };
 		4217456C1C882D6000D8C9E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */; };
+		4260E1181C8B106F002DC7FA /* AppLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4260E1171C8B106F002DC7FA /* AppLoadingView.xib */; };
 		4F3BD4B1A3C545B491C5A117 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29839D5A69AC46CC88040A97 /* libCodePush.a */; };
 		78B1CB0CCF1148ED8659E26F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7B75774D7A94F998F53A63B /* Ionicons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -178,6 +179,7 @@
 		4217455A1C88082B00D8C9E7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		425DE1E51C88018B0050BA5C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4260E1171C8B106F002DC7FA /* AppLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppLoadingView.xib; sourceTree = "<group>"; };
 		5C946A5AB00D4517BE1EB005 /* CodePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		712F85B17D5E4FA2B61AFBE4 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				554162A41C88C12C00F56312 /* AppReloader */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				4260E1171C8B106F002DC7FA /* AppLoadingView.xib */,
 				4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -647,6 +650,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4217456C1C882D6000D8C9E7 /* LaunchScreen.xib in Resources */,
+				4260E1181C8B106F002DC7FA /* AppLoadingView.xib in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				C2B0DBDA8E134529B66FE19F /* Entypo.ttf in Resources */,
 				D1AA9761407F43148F9FF609 /* EvilIcons.ttf in Resources */,
@@ -838,6 +842,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
