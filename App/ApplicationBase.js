@@ -4,6 +4,7 @@ import React, { AppRegistry, Component, Platform } from 'react-native';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import reducer from './Reducers';
+import codePush from 'react-native-code-push';
 
 const store = applyMiddleware(thunk)(createStore)(reducer);
 
@@ -26,6 +27,10 @@ global.RN_VERSION = RN_VERSION;
 global.PLATFORM = Platform.OS;
 
 class ApplicationBase extends Component {
+
+  componentDidMount() {
+    codePush.sync();
+  }
 
   render() {
     return (

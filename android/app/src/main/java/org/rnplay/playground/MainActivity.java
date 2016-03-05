@@ -16,6 +16,7 @@ import com.facebook.react.shell.MainReactPackage;
 
 import com.eguma.barcodescanner.BarcodeScanner;
 import com.oblador.vectoricons.VectorIconsPackage;
+import com.microsoft.codepush.react.CodePush;
 
 import io.fabric.sdk.android.Fabric;
 import java.io.File;
@@ -31,16 +32,19 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        CodePush codePush = new CodePush("N1DVgezFceE3MIkk0hc_ta4XT9LRE1MWJZhUx", this, BuildConfig.DEBUG);
+
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
 
         // Set up default RNPlayNative app values.
         String packagerRoot = "";
-        String bundleAssetName = "index.android.bundle"; // For production.
+        String bundleAssetName = codePush.getBundleUrl("index.android.bundle"); // For production.
         String jsMainModuleName = "index.android";
         String moduleName = "RNPlayNative";
         Boolean liveReloadEnabled = false;
-        Boolean useDevSupport = true;
+        Boolean useDevSupport = false;
 
         // Get the params that is passed in from Appetize.
         Bundle bundle = getIntent().getExtras();
@@ -75,6 +79,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setBundleAssetName(bundleAssetName)
                 .setJSMainModuleName(jsMainModuleName)
                 .addPackage(new MainReactPackage())
+                .addPackage(codePush.getReactPackage())
                 .addPackage(new AppReloader())
                 .addPackage(new BarcodeScanner())
                 .addPackage(new VectorIconsPackage())
