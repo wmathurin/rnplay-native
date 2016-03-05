@@ -105,10 +105,10 @@ android {
     }
     signingConfigs {
       release {
-          //storeFile file(RNPLAY_RELEASE_STORE_FILE)
-          //storePassword RNPLAY_RELEASE_STORE_PASSWORD
-          //keyAlias RNPLAY_RELEASE_KEY_ALIAS
-          //keyPassword RNPLAY_RELEASE_KEY_PASSWORD
+          storeFile file(RNPLAY_RELEASE_STORE_FILE)
+          storePassword RNPLAY_RELEASE_STORE_PASSWORD
+          keyAlias RNPLAY_RELEASE_KEY_ALIAS
+          keyPassword RNPLAY_RELEASE_KEY_PASSWORD
       }
     }
     splits {
