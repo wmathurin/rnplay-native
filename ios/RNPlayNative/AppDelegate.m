@@ -6,7 +6,6 @@
 #import "RCTEventDispatcher.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
-#import "CodePush.h"
 
 @implementation AppDelegate
 
@@ -50,10 +49,10 @@ int const kFlipTransitionType = UIViewAnimationOptionTransitionFlipFromRight;
   } else {
 
     // NOTE: Uncomment this line before release
-    // jsCodeLocation = [CodePush bundleURL];
+    initialJSBundleURL = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
     // NOTE: Comment out this line before release
-    initialJSBundleURL = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
+    //initialJSBundleURL = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
 
     initialModuleName = @"RNPlayNative";
   }
