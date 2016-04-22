@@ -97,8 +97,8 @@ android {
         applicationId 'org.rnplay.playground'
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 3
-        versionName "1.21.0"
+        versionCode 4
+        versionName "1.24.1"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -148,7 +148,6 @@ dependencies {
 
     compile project(':react-native-barcodescanner')
     compile project(':react-native-vector-icons')
-    compile project(':react-native-code-push')
 
     compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
       transitive = true;
