@@ -8,11 +8,11 @@ var {
   View,
   Platform,
   StyleSheet,
+  StatusBar
 } = React;
 
 var AppList = require("../Components/AppList");
 var NavigationBar = require('../Components/NavigationBar');
-var StatusBar = require('../Components/StatusBar');
 
 var MyApps = React.createClass({
 
@@ -36,7 +36,7 @@ var MyApps = React.createClass({
   },
 
   render() {
-    StatusBar.setStyle('light-content');
+    <StatusBar barStyle='light-content' />
     return (
       <View style={styles.container}>
         {this._renderIOSNavBar()}

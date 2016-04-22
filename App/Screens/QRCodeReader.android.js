@@ -3,8 +3,11 @@
 var React = require('react-native');
 var Portal = require('react-native/Libraries/Portal/Portal.js');
 
+var {
+  StatusBar
+} = React;
+
 var generateAppURL = require('../Utilities/generateAppURL');
-var StatusBar = require('../Components/StatusBar');
 var BarCodeReader = require('../Components/BarCodeReader');
 var QRCodeReaderInstructions = require('./QRCodeReaderInstructions');
 var reloadApp = require('../Utilities/reloadApp');
@@ -49,7 +52,7 @@ var QRCodeReader = React.createClass({
   },
 
   render(){
-    StatusBar.setStyle('default');
+    <StatusBar barStyle='light-content' />
 
     return (
       <QRCodeReaderInstructions onCameraOpen={this.onCameraOpen} />

@@ -3,7 +3,6 @@
 var React = require('react-native');
 var NavigationBar = require('../Components/NavigationBar');
 var Colors = require('../Utilities/Colors');
-var StatusBar = require('../Components/StatusBar');
 
 var {
   StyleSheet,
@@ -13,6 +12,7 @@ var {
   Linking,
   TouchableOpacity,
   Image,
+  StatusBar,
   Platform,
   ToolbarAndroid,
 } = React;
@@ -47,7 +47,8 @@ var About = React.createClass({
   },
 
   render() {
-    StatusBar.setStyle('light-content');
+
+    <StatusBar barStyle='light-content' />
 
     return (
       <View style={styles.container}>

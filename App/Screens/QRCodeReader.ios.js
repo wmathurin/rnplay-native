@@ -3,10 +3,10 @@
 var React = require('react-native');
 var {
   Modal,
+  StatusBar
 } = React;
 
 var generateAppURL = require('../Utilities/generateAppURL');
-var StatusBar = require('../Components/StatusBar');
 var BarCodeReader = require('../Components/BarCodeReader');
 var QRCodeReaderInstructions = require('./QRCodeReaderInstructions');
 var reloadApp = require('../Utilities/reloadApp');
@@ -49,7 +49,7 @@ var QRCodeReader = React.createClass({
   },
 
   render(){
-    StatusBar.setStyle('default');
+    <StatusBar barStyle='light-content' />
 
     if (this.state.cameraOpen) {
       return (

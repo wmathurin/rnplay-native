@@ -10,12 +10,12 @@ var {
   ScrollView,
   TouchableOpacity,
   Platform,
+  StatusBar
 } = React;
 
 var AppList = require("../Components/AppList");
 var Search = require('../Screens/Search');
 var Colors = require('../Utilities/Colors');
-var StatusBar = require('../Components/StatusBar');
 
 var Explore = React.createClass({
   getInitialState() {
@@ -90,7 +90,7 @@ var Explore = React.createClass({
   },
 
   render() {
-    StatusBar.setStyle('default');
+    <StatusBar barStyle='default' />
 
     return (
       <View style={styles.mainContainer}>
