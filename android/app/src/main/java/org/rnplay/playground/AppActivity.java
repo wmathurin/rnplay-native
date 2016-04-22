@@ -8,6 +8,8 @@ import com.eguma.barcodescanner.BarcodeScanner;
 import com.facebook.react.LifecycleState;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
+import com.facebook.react.common.ReactConstants;
+
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 
@@ -64,7 +66,7 @@ public class AppActivity extends Activity implements DefaultHardwareBackBtnHandl
         super.onPause();
 
         if (mReactInstanceManager != null) {
-            mReactInstanceManager.onPause();
+            mReactInstanceManager.onHostPause();
         }
     }
 
@@ -73,7 +75,7 @@ public class AppActivity extends Activity implements DefaultHardwareBackBtnHandl
         super.onResume();
 
         if (mReactInstanceManager != null) {
-            mReactInstanceManager.onResume(this, this);
+            mReactInstanceManager.onHostResume(this, this);
         }
     }
 }
