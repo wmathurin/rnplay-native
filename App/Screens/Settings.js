@@ -2,18 +2,18 @@
 
 var React = require('react-native');
 var NavigationBar = require('../Components/NavigationBar');
-var StatusBar = require('../Components/StatusBar');
 
 var {
   StyleSheet,
   Text,
+  StatusBar,
   View,
 } = React;
 
 var Settings = React.createClass({
 
   render(){
-    StatusBar.setStyle('light-content');
+    <StatusBar barStyle='light-content' />
 
     return (
       <View style={styles.mainContainer}>

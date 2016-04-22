@@ -23,7 +23,7 @@ var {
   StyleSheet,
   Text,
   View,
-  StatusBarIOS,
+  StatusBar,
   NativeAppEventEmitter,
 } = React;
 
@@ -31,7 +31,8 @@ var RNPlayNative = React.createClass({
 
   getInitialState() {
     return {
-      bootstrapped: false
+      bootstrapped: false,
+      statusHidden: false
     };
   },
 
@@ -59,7 +60,7 @@ var RNPlayNative = React.createClass({
   },
 
   _onReturn() {
-    StatusBarIOS.setHidden(false);
+    this.setState({statusHidden: false})
   },
 
   _processURL(e) {
@@ -78,6 +79,7 @@ var RNPlayNative = React.createClass({
   render() {
     return (
       <View style={{flex: 1}}>
+        <StatusBar barStyle="light-content" hidden={this.state.statusHidden} />
         <Home />
       </View>
     )

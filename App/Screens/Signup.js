@@ -37,10 +37,6 @@ var Signup = React.createClass({
       AlertIOS.alert('Error', 'Passwords do not match.',[{text: 'OK'}])
       return;
     }
-    if(this.state.password.length < 5) {
-      AlertIOS.alert('Error', 'Please enter a valid password',[{text: 'OK'}])
-      return;
-    }
 
     this.setState({ isLoading: true });
 

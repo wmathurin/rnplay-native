@@ -13,3 +13,11 @@ packager0210:
     VIRTUAL_HOST: packager0210.rnplay.org
   volumes:
     - /home/app/rails/rnplay/app_js:/app/js
+
+packager0220:
+  restart: always
+  image: packager:0.22.0
+  environment:
+    VIRTUAL_HOST: packager0220.rnplay.org
+  volumes:
+    - /home/app/rails/rnplay/app_js:/app/js

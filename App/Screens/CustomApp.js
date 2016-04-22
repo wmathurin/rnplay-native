@@ -5,7 +5,6 @@ var NavigationBar = require('../Components/NavigationBar');
 var Api = require('../Api/Core');
 var reloadApp = require('../Utilities/reloadApp');
 var Colors = require('../Utilities/Colors');
-var StatusBar = require('../Components/StatusBar');
 var Alert = require('../Components/Alert');
 var Spinner = require('../Components/Spinner');
 
@@ -17,6 +16,7 @@ var {
   Text,
   TouchableHighlight,
   View,
+  StatusBar,
   Platform,
 } = React;
 
@@ -38,12 +38,12 @@ var CustomApp = React.createClass({
     }
 
     this.setState({ isLoading: true });
-    reloadApp(this.state.url, this.state.appName);
+    reloadApp(this.state.url, "", this.state.appName, this.state.appName);
     this.setState({ isLoading: false });
   },
 
   render() {
-    StatusBar.setStyle('light-content');
+    <StatusBar barStyle='light-content' />
 
     return (
       <View style={styles.mainContainer}>
