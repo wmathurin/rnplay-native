@@ -38,7 +38,7 @@ var CustomApp = React.createClass({
     }
 
     this.setState({ isLoading: true });
-    reloadApp(this.state.url, this.state.appName);
+    reloadApp(this.state.url, "", this.state.appName, this.state.appName);
     this.setState({ isLoading: false });
   },
 
