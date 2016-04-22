@@ -1,6 +1,6 @@
 {
   "name": "RNPlayNative",
-  "version": "1.22.0",
+  "version": "1.24.1",
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
