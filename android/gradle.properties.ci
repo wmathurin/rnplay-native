@@ -1,0 +1,6 @@
+RNPLAY_RELEASE_STORE_FILE=../_tmp/android.keystore
+RNPLAY_RELEASE_KEY_ALIAS=bitrise-android-test
+RNPLAY_RELEASE_STORE_PASSWORD=bitrise-android-keystore-1234
+RNPLAY_RELEASE_KEY_PASSWORD=bitrise-android-keypass-1234
+
+android.useDeprecatedNdk=true

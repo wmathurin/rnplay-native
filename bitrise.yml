@@ -1,0 +1,46 @@
+---
+format_version: 1.1.0
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+app:
+  envs:
+  - BITRISE_PROJECT_PATH: "./android/app/build.gradle"
+    opts:
+      is_expand: false
+  - GRADLE_TASK: assembleRelease
+    opts:
+      is_expand: false
+  - GRADLEW_PATH: "./android/gradlew"
+    opts:
+      is_expand: false
+trigger_map:
+- pattern: "*"
+  is_pull_request_allowed: true
+  workflow: primary
+workflows:
+  generate-keystore:
+    steps:
+    - script:
+        inputs:
+        - content: |-
+            #!/bin/bash
+            set -e
+            set -x
+            mkdir -p ./_tmp
+            echo y | keytool -genkeypair -dname "cn=RNPlay, ou=RNPlay, o=RNPlay, c=US" \
+              -alias bitrise-android-test -keypass bitrise-android-keypass-1234 -keystore ./_tmp/android.keystore \
+              -storepass bitrise-android-keystore-1234 -validity 9999
+            cp gradle.properties.ci gradle.properties
+  primary:
+    steps:
+    - activate-ssh-key@3.1.0:
+        title: Activate App SSH key
+        run_if: ".IsCI"
+        inputs:
+        - ssh_key_save_path: "$HOME/.ssh/steplib_ssh_step_id_rsa"
+    - git-clone@3.2.0:
+        run_if: ".IsCI"
+    - gradle-runner@1.3.1:
+        inputs:
+        - gradle_file: "$BITRISE_PROJECT_PATH"
+        - gradle_task: "$GRADLE_TASK"
+    - deploy-to-bitrise-io@1.2.3:
