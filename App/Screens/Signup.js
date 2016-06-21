@@ -1,11 +1,11 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var NavigationBar = require('../Components/NavigationBar');
 var Api = require('../Api/Core');
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   ActivityIndicatorIOS,
   AlertIOS,
   AsyncStorage,
@@ -15,7 +15,7 @@ var {
   Text,
   TouchableHighlight,
   View
-} = React;
+} from 'react-native';
 
 var Signup = React.createClass({
 

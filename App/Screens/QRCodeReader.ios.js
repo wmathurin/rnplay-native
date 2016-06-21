@@ -1,10 +1,11 @@
 'use strict';
 
-var React = require('react-native');
-var {
+import React from 'react'
+
+import {
   Modal,
   StatusBar
-} = React;
+} from 'react-native'
 
 var generateAppURL = require('../Utilities/generateAppURL');
 var BarCodeReader = require('../Components/BarCodeReader');

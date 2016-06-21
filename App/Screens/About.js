@@ -1,10 +1,10 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var NavigationBar = require('../Components/NavigationBar');
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   StyleSheet,
   Text,
   ScrollView,
@@ -15,7 +15,7 @@ var {
   StatusBar,
   Platform,
   ToolbarAndroid,
-} = React;
+} from 'react-native'
 
 var {map} = require('lodash');
 

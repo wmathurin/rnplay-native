@@ -5,7 +5,7 @@
 
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var Api = require("../Api/Core");
 var NavigationBar = require('../Components/NavigationBar');
 var Login = require('../Screens/Login');
@@ -15,7 +15,7 @@ var Colors = require('../Utilities/Colors');
 
 var DEFAULT_ROUTE = {id: 'my_apps'};
 
-var {
+import {
   ActivityIndicatorIOS,
   AppRegistry,
   Image,
@@ -27,7 +27,7 @@ var {
   View,
   Navigator,
   Platform,
-} = React;
+} from 'react-native';
 
 var MyAppsContainer = React.createClass({
   renderScene(route, nav) {

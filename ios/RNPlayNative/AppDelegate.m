@@ -49,10 +49,10 @@ int const kFlipTransitionType = UIViewAnimationOptionTransitionFlipFromRight;
   } else {
 
     // NOTE: Uncomment this line before release
-    initialJSBundleURL = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+    //initialJSBundleURL = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
     // NOTE: Comment out this line before release
-    //initialJSBundleURL = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
+    initialJSBundleURL = [NSURL URLWithString:@"http://192.168.0.102:8081/index.ios.bundle?platform=ios&dev=true"];
 
     initialModuleName = @"RNPlayNative";
   }

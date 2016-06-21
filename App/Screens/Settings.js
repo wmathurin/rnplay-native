@@ -1,14 +1,14 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var NavigationBar = require('../Components/NavigationBar');
 
-var {
+import {
   StyleSheet,
   Text,
   StatusBar,
   View,
-} = React;
+} from 'react-native';
 
 var Settings = React.createClass({
 

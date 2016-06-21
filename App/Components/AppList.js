@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 
-var {
+import {
   ActivityIndicatorIOS,
   AppRegistry,
   Image,
@@ -15,7 +15,7 @@ var {
   Navigator,
   PixelRatio,
   Platform,
-} = React;
+} from 'react-native'
 
 var ActionSheetIOS = require('ActionSheetIOS');
 

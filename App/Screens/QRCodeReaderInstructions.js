@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 
-var {
+import {
   StyleSheet,
   Text,
   View,
   TouchableOpacity,
-} = React;
+} from 'react-native'
 
 var Icon = require('../Components/Icon');
 var Colors = require('../Utilities/Colors');
@@ -32,7 +32,7 @@ var QRCodeReaderInstructions = React.createClass({
 
         <TouchableOpacity onPress={this.props.onCameraOpen} >
           <Icon
-            name='camera'
+            name='ios-camera'
             size={80}
             style={styles.cameraButton}
             color={Colors.grey}

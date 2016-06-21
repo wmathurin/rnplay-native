@@ -1,15 +1,15 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var Api = require('../Api/Core');
 
-var {
+import {
   TouchableOpacity,
   View,
   Platform,
   StyleSheet,
   StatusBar
-} = React;
+} from 'react-native'
 
 var AppList = require("../Components/AppList");
 var NavigationBar = require('../Components/NavigationBar');

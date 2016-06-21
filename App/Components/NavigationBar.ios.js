@@ -1,17 +1,17 @@
 'use strict';
 
-var React = require('react-native');
+var React = require('react');
 var Dimensions = require('Dimensions');
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   PixelRatio,
   StyleSheet,
   Text,
   TouchableOpacity,
   TouchableWithoutFeedback,
   View
-} = React;
+} from 'react-native';
 
 var NavigationBar = React.createClass({
 
@@ -36,7 +36,9 @@ var NavigationBar = React.createClass({
     } else {
       return (
         <TouchableWithoutFeedback>
-          <Text style={styles.navButton}></Text>
+          <View style={styles.navButton}>
+            <Text style={styles.navButtonText}></Text>
+          </View>
         </TouchableWithoutFeedback>
       );
     }
@@ -59,7 +61,9 @@ var NavigationBar = React.createClass({
     } else {
       return (
         <TouchableWithoutFeedback>
-          <Text style={styles.navButton}></Text>
+          <View style={styles.navButton}>
+            <Text style={styles.navButtonText}></Text>
+          </View>
         </TouchableWithoutFeedback>
       );
     }
@@ -89,10 +93,12 @@ var styles = StyleSheet.create({
   },
   navButton: {
     flex: 0.3,
+    paddingHorizontal: 10,
+  },
+  navButtonText: {
     fontFamily: "Avenir Next",
     fontSize: 14,
     textAlign: 'right',
-    paddingHorizontal: 10,
     color: 'white'
   },
   navTitle: {

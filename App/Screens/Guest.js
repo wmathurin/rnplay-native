@@ -5,9 +5,9 @@
 
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 
-var {
+import {
   ActivityIndicatorIOS,
   AppRegistry,
   Image,
@@ -17,11 +17,11 @@ var {
   TouchableOpacity,
   View,
   Modal
-} = React;
+} from 'react-native'
 
 var reloadApp = require('../Utilities/reloadApp');
-var Camera = require('react-native-camera');
 var Colors = require('../Utilities/Colors');
+import Camera from 'react-native-camera';
 
 var Api = require("../Api/Core");
 

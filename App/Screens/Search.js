@@ -1,18 +1,18 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var AppList = require("../Components/AppList");
 var NoResults = require('../Components/NoResults');
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   StyleSheet,
   Text,
   View,
   ListView,
   TextInput,
   Platform,
-} = React;
+} from 'react-native';
 
 var Explore = React.createClass({
   getInitialState() {

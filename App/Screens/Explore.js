@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 
-var {
+import {
   SegmentedControlIOS,
   StyleSheet,
   Text,
@@ -11,7 +11,7 @@ var {
   TouchableOpacity,
   Platform,
   StatusBar
-} = React;
+} from 'react-native'
 
 var AppList = require("../Components/AppList");
 var Search = require('../Screens/Search');

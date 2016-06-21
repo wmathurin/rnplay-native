@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var NavigationBar = require('../Components/NavigationBar');
 var Api = require('../Api/Core');
 var Colors = require('../Utilities/Colors');
 var Alert = require('../Components/Alert');
 var Spinner = require('../Components/Spinner');
 
-var {
+import {
   ActivityIndicatorIOS,
   ScrollView,
   StyleSheet,
@@ -18,7 +18,7 @@ var {
   StatusBar,
   Platform,
   ToastAndroid,
-} = React;
+} from 'react-native';
 
 var Login = React.createClass({
 

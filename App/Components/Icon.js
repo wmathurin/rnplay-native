@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var VectorIcon = require('react-native-vector-icons/Ionicons');
 
 var Icon = React.createClass({

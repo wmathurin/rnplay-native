@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var NavigationBar = require('../Components/NavigationBar');
 var Api = require('../Api/Core');
 var reloadApp = require('../Utilities/reloadApp');
@@ -8,7 +8,7 @@ var Colors = require('../Utilities/Colors');
 var Alert = require('../Components/Alert');
 var Spinner = require('../Components/Spinner');
 
-var {
+import {
   ActivityIndicatorIOS,
   ScrollView,
   StyleSheet,
@@ -18,7 +18,7 @@ var {
   View,
   StatusBar,
   Platform,
-} = React;
+} from 'react-native'
 
 var CustomApp = React.createClass({
 

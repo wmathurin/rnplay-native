@@ -5,7 +5,7 @@
 
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 
 var qs = require('qs');
 var Linking = require('Linking');
@@ -17,7 +17,7 @@ var Guest = require('../Screens/Guest');
 
 var _ = require('lodash');
 
-var {
+import {
   AppRegistry,
   Navigator,
   StyleSheet,
@@ -25,7 +25,7 @@ var {
   View,
   StatusBar,
   NativeAppEventEmitter,
-} = React;
+} from 'react-native'
 
 var RNPlayNative = React.createClass({
 

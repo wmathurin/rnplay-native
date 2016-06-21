@@ -5,7 +5,8 @@
 
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
+
 var Explore = require('./Explore');
 var MyAppsContainer = require('./MyAppsContainer');
 var CustomApp = require('./CustomApp');
@@ -16,13 +17,13 @@ var Icon = require('react-native-vector-icons/Ionicons');
 var NavigationBar = require('../Components/NavigationBar');
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   AppRegistry,
   StyleSheet,
   TouchableOpacity,
   TabBarIOS,
   View,
-} = React;
+} from 'react-native';
 
 var Home = React.createClass({
   getInitialState() {
@@ -44,7 +45,7 @@ var Home = React.createClass({
         barTintColor={'white'}>
         <Icon.TabBarItem
           name="explore"
-          iconName={'ios-search-strong'}
+          iconName={'ios-search'}
           title={'Explore'}
           iconSize={32}
           accessibilityLabel="Explore Tab"
@@ -64,7 +65,7 @@ var Home = React.createClass({
         </Icon.TabBarItem>
         <Icon.TabBarItem
             name="custom-app"
-            iconName={'code'}
+            iconName={'ios-code'}
             title={'Direct URL'}
             iconSize={32}
             accessibilityLabel="Load your custom app"
@@ -77,7 +78,7 @@ var Home = React.createClass({
         </Icon.TabBarItem>
         <Icon.TabBarItem
             name="qr_code_reader"
-            iconName={'camera'}
+            iconName={'ios-camera'}
             title={'Scan Code'}
             iconSize={32}
             accessibilityLabel="QR Code Reader"

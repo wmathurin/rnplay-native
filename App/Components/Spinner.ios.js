@@ -1,11 +1,11 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react';
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   ActivityIndicatorIOS,
-} = React;
+} from 'react-native';
 
 class Spinner extends React.Component {
   render() {

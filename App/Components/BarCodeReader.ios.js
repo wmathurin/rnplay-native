@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react-native');
-var Camera = require('react-native-camera');
-var Icon = require('react-native-vector-icons/Ionicons');
-
-var {
+import React from 'react';
+import {
   StyleSheet,
   TouchableOpacity,
-} = React;
+} from 'react-native'
+import Camera from 'react-native-camera';
+
+var Icon = require('react-native-vector-icons/Ionicons');
 
 var BarCodeReader = React.createClass({
   render() {
@@ -16,7 +16,7 @@ var BarCodeReader = React.createClass({
         ref="cam"
         style={styles.camera}
         onBarCodeRead={this.props.onRead}>
-        <TouchableOpacity onPress={this.props.onClose} >
+        <TouchableOpacity onPress={this.props.onClose}>
           <Icon name='close'
             size={30}
             style={styles.closeButton}
