@@ -33,3 +33,12 @@ packager0241:
   volumes:
     - /home/app/rails/rnplay/app_js:/app/js
     - /home/app/rails/rnplay/public/.well-known:/app/.well-known
+
+packager0280:
+  restart: always
+  image: packager:0.28.0
+  environment:
+    VIRTUAL_HOST: packager0280.rnplay.org
+  volumes:
+    - /home/app/rails/rnplay/app_js:/app/js
+    - /home/app/rails/rnplay/public/.well-known:/app/.well-known
