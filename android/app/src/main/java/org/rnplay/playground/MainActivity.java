@@ -14,7 +14,7 @@ import com.facebook.react.ReactRootView;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 
-import com.eguma.barcodescanner.BarcodeScanner;
+import com.eguma.barcodescanner.BarcodeScannerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 
 import io.fabric.sdk.android.Fabric;
@@ -77,7 +77,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setJSMainModuleName(jsMainModuleName)
                 .addPackage(new MainReactPackage())
                 .addPackage(new AppReloader())
-                .addPackage(new BarcodeScanner())
+                .addPackage(new BarcodeScannerPackage())
                 .addPackage(new VectorIconsPackage())
                 .setUseDeveloperSupport(useDevSupport)
                 .setInitialLifecycleState(LifecycleState.RESUMED)

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
-import com.eguma.barcodescanner.BarcodeScanner;
+import com.eguma.barcodescanner.BarcodeScannerPackage;
 import com.facebook.react.LifecycleState;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
@@ -34,7 +34,7 @@ public class AppActivity extends Activity implements DefaultHardwareBackBtnHandl
                 .setBundleAssetName("") // This should be empty since we are in Dev mode.
                 .setJSMainModuleName(jsMainModuleName)
                 .addPackage(new MainReactPackage())
-                .addPackage(new BarcodeScanner())
+                .addPackage(new BarcodeScannerPackage())
                 .setUseDeveloperSupport(true)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
