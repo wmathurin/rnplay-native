@@ -15,7 +15,7 @@
     "mkdirp": "0.5.1",
     "qs": "6.2.0",
     "react": "15.1.0",
-    "react-native": "0.27.2",
+    "react-native": "0.28.0",
     "react-native-barcodescanner": "3.0.0",
     "react-native-camera": "github:lwansbrough/react-native-camera",
     "react-native-drawer-layout": "1.0.0",
