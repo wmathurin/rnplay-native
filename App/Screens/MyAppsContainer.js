@@ -16,7 +16,7 @@ var Colors = require('../Utilities/Colors');
 var DEFAULT_ROUTE = {id: 'my_apps'};
 
 import {
-  ActivityIndicatorIOS,
+  ActivityIndicator,
   AppRegistry,
   Image,
   StatusBar,

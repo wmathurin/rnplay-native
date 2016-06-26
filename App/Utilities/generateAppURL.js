@@ -1,3 +1,3 @@
 module.exports = (app) => {
-  return `http://packager${global.RN_VERSION}.rnplay.org`;
+  return `https://packager${global.RN_VERSION}.rnplay.org`;
 };

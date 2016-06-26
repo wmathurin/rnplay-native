@@ -8,7 +8,7 @@
 import React from 'react'
 
 import {
-  ActivityIndicatorIOS,
+  ActivityIndicator,
   AppRegistry,
   Image,
   ListView,
@@ -110,7 +110,7 @@ var Guest = React.createClass({
   renderLoading() {
     return (
       <View style={styles.container}>
-        <ActivityIndicatorIOS size="large" />
+        <ActivityIndicator size="large" />
       </View>
     );
   },

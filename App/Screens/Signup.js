@@ -6,7 +6,7 @@ var Api = require('../Api/Core');
 var Colors = require('../Utilities/Colors');
 
 import {
-  ActivityIndicatorIOS,
+  ActivityIndicator,
   AlertIOS,
   AsyncStorage,
   ScrollView,
@@ -115,11 +115,11 @@ var Signup = React.createClass({
             <Text style={styles.buttonText}>SIGN UP</Text>
           </TouchableHighlight>
 
-          <ActivityIndicatorIOS
+          <ActivityIndicator
             animating={this.state.isLoading}
             color={Colors.tintColor}
             size="large">
-          </ActivityIndicatorIOS>
+          </ActivityIndicator>
         </ScrollView>
       </View>
     )

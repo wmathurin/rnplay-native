@@ -9,7 +9,7 @@ var Alert = require('../Components/Alert');
 var Spinner = require('../Components/Spinner');
 
 import {
-  ActivityIndicatorIOS,
+  ActivityIndicator,
   ScrollView,
   StyleSheet,
   TextInput,

@@ -3,7 +3,7 @@
 import React from 'react';
 
 import {
-  ActivityIndicatorIOS,
+  ActivityIndicator,
   AppRegistry,
   Image,
   ListView,
