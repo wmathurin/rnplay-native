@@ -1,6 +1,7 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
+
 var Explore = require('./Explore');
 var MyAppsContainer = require('./MyAppsContainer');
 var CustomApp = require('./CustomApp');
@@ -11,7 +12,7 @@ var DrawerLayout = require('react-native-drawer-layout');
 var NavigationBar = require('../Components/NavigationBar');
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   AppRegistry,
   StyleSheet,
   View,
@@ -19,7 +20,7 @@ var {
   TouchableOpacity,
   ListView,
   Image,
-} = React;
+} from 'react-native'
 
 var dataSource = new ListView.DataSource({
   rowHasChanged: (row1, row2) => row1 !== row2,

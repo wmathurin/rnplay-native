@@ -1,12 +1,12 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 var Colors = require('../Utilities/Colors');
 
-var {
+import {
   ToolbarAndroid,
   StyleSheet,
-} = React;
+} from 'react-native'
 
 var NavigationBar = React.createClass({
   render() {

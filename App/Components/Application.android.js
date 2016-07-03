@@ -5,14 +5,14 @@
 
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 
 var Home = require('../Screens/Home');
 
-var {
+import {
   AppRegistry,
   View,
-} = React;
+} from 'react-native'
 
 var RNPlayNative = React.createClass({
   render() {

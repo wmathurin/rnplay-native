@@ -1,11 +1,11 @@
 'use strict';
 
-var React = require('react-native');
-var Portal = require('react-native/Libraries/Portal/Portal.js');
+import React from 'react'
 
-var {
+import {
+  Modal,
   StatusBar
-} = React;
+} from 'react-native'
 
 var generateAppURL = require('../Utilities/generateAppURL');
 var BarCodeReader = require('../Components/BarCodeReader');
@@ -13,49 +13,16 @@ var QRCodeReaderInstructions = require('./QRCodeReaderInstructions');
 var reloadApp = require('../Utilities/reloadApp');
 var TimerMixin = require('react-timer-mixin');
 
-let portalTag;
-
 var QRCodeReader = React.createClass({
-  mixins: [TimerMixin],
-
-  componentWillMount() {
-    portalTag = Portal.allocateTag();
-  },
-
-  componentWillUnmount() {
-    portalTag = null;
-  },
-
-  onBarCodeRead(e) {
-    var app = JSON.parse(e.data);
-    this.setTimeout(
-      () => {
-        Portal.closeModal(portalTag);
-      }
-    )
-
-    reloadApp(generateAppURL(app), app.bundle_path, app.module_name, app.name);
-  },
-
-  onBarCodeClose() {
-    Portal.closeModal(portalTag);
-  },
-
-  onCameraOpen() {
-    Portal.showModal(portalTag, this.renderBarCodeReader());
-  },
-
-  renderBarCodeReader() {
+  render() {
     return (
-      <BarCodeReader key="preventWarning" onRead={this.onBarCodeRead} onClose={this.onBarCodeClose} />
-    );
-  },
-
-  render(){
-    <StatusBar barStyle='light-content' />
-
-    return (
-      <QRCodeReaderInstructions onCameraOpen={this.onCameraOpen} />
+      <View style={{flex: 1}}>
+        <StatusBar barStyle='light-content' />
+        <QRCodeReaderInstructions onCameraOpen={() => this.setState({modalVisible: true})} />
+        <Modal visible={this.state.modalVisible}>
+          <BarCodeReader key="preventWarning" onRead={this.onBarCodeRead} onClose={this.onBarCodeClose} />
+        </Modal>
+      </View>
     );
   }
 });

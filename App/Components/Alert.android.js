@@ -1,10 +1,10 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 
-var {
+import {
   ToastAndroid,
-} = React;
+} from 'react-native'
 
 var Alert = {
   alert(title, message = null, buttons = [{text: 'OK'}], type = null) {

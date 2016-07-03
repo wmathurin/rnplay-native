@@ -1,16 +1,16 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 var Colors = require('../Utilities/Colors');
 var BarcodeScanner = require('react-native-barcodescanner');
 
-var {
+import {
   View,
   Text,
   StyleSheet,
   TouchableOpacity,
   ToolbarAndroid,
-} = React;
+} from 'react-native'
 
 var BarCodeReader = React.createClass({
   barcodeReceived(e) {

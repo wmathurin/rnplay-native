@@ -1,16 +1,16 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 var Dimensions = require('Dimensions');
 
-var {
+import {
   Navigator,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
   Image
-} = React;
+} from 'react-native'
 
 var Landing = React.createClass({
 

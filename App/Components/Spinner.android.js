@@ -1,11 +1,11 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react'
 
-var {
+import {
   ProgressBarAndroid,
   View,
-} = React;
+} from 'react-native'
 
 var Colors = require('../Utilities/Colors');
 
