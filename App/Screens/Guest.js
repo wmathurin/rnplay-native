@@ -21,7 +21,7 @@ import {
 
 var reloadApp = require('../Utilities/reloadApp');
 var Colors = require('../Utilities/Colors');
-import Camera from 'react-native-camera';
+//import Camera from 'react-native-camera';
 
 var Api = require("../Api/Core");
 

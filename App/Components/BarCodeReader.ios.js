@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native'
+
 import Camera from 'react-native-camera';
 
 var Icon = require('react-native-vector-icons/Ionicons');
@@ -17,7 +18,7 @@ var BarCodeReader = React.createClass({
         style={styles.camera}
         onBarCodeRead={this.props.onRead}>
         <TouchableOpacity onPress={this.props.onClose}>
-          <Icon name='close'
+          <Icon name='ios-close'
             size={30}
             style={styles.closeButton}
             color='white' />

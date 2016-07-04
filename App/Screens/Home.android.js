@@ -43,7 +43,7 @@ var MenuData = [
       title: 'Explore',
       component: Explore,
     },
-    icon: getIconFor('search'),
+    icon: getIconFor('ios-search'),
   },
   {
     id: 2,
@@ -51,7 +51,7 @@ var MenuData = [
       title: 'My Apps',
       component: MyAppsContainer,
     },
-    icon: getIconFor('briefcase'),
+    icon: getIconFor('ios-briefcase'),
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ var MenuData = [
       title: 'Scan Code',
       component: QRCodeReader,
     },
-    icon: getIconFor('camera'),
+    icon: getIconFor('ios-camera'),
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ var MenuData = [
       title: 'About',
       component: About,
     },
-    icon: getIconFor('help'),
+    icon: getIconFor('ios-help'),
   },
 ];
 

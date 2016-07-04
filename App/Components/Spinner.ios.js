@@ -9,13 +9,18 @@ import {
 
 class Spinner extends React.Component {
   render() {
-    return (
-      <ActivityIndicator
-        color={Colors.tintColor}
-        style={{flex: 1}}
-        animating={this.props.isLoading}
-        size="large" />
-    );
+    if (this.props.isLoading) {
+      return (
+        <ActivityIndicator
+          color={Colors.tintColor}
+          style={{flex: 1}}
+          hidesWhenStopped={false}
+          animating={this.props.isLoading}
+          size="large" />
+      );
+    } else {
+      return null
+    }
   }
 }
 
