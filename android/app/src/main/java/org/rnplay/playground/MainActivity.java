@@ -77,7 +77,8 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setApplication(getApplication())
                 .setBundleAssetName(bundleAssetName)
                 .setJSMainModuleName(jsMainModuleName)
-                .addPackage(new MainReactPackage())
+                .addPackage(new MainReactPackage(),
+            new RCTCameraPackage())
                 .addPackage(new AppReloader())
                 .addPackage(new BarcodeScannerPackage())
                 .addPackage(new VectorIconsPackage())
