@@ -16,6 +16,7 @@ import com.facebook.react.shell.MainReactPackage;
 
 import com.eguma.barcodescanner.BarcodeScannerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
+import com.lwansbrough.RCTCamera.*;
 
 import io.fabric.sdk.android.Fabric;
 import java.io.File;
@@ -77,8 +78,8 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
                 .setApplication(getApplication())
                 .setBundleAssetName(bundleAssetName)
                 .setJSMainModuleName(jsMainModuleName)
-                .addPackage(new MainReactPackage(),
-            new RCTCameraPackage())
+                .addPackage(new MainReactPackage())
+                .addPackage(new RCTCameraPackage())
                 .addPackage(new AppReloader())
                 .addPackage(new BarcodeScannerPackage())
                 .addPackage(new VectorIconsPackage())
