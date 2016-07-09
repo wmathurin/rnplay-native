@@ -24,6 +24,17 @@ class QRCodeReader extends React.Component {
     this.setState({modalVisible: true})
   }
 
+  onBarCodeRead(e) {
+    var app = JSON.parse(e.data);
+    this.setTimeout(
+      () => {
+        Portal.closeModal(portalTag);
+      }
+    )
+
+    reloadApp(generateAppURL(app), app.bundle_path, app.module_name, app.name);
+  }
+
   render() {
     return (
       <View style={{flex: 1}}>
