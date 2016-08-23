@@ -42,3 +42,12 @@ packager0280:
   volumes:
     - /home/app/rails/rnplay/app_js:/app/js
     - /home/app/rails/rnplay/public/.well-known:/app/.well-known
+
+packagerexponent:
+  restart: always
+  image: packager:exponent
+  environment:
+    VIRTUAL_HOST: packagerexponent.rnplay.org
+  volumes:
+    - /home/app/rails/rnplay/app_js:/app/js
+    - /home/app/rails/rnplay/public/.well-known:/app/.well-known
