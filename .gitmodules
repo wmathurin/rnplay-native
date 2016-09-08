@@ -1,0 +1,3 @@
+[submodule "external/ios"]
+	path = external/ios
+	url = https://github.com/forcedotcom/SalesforceMobileSDK-iOS
