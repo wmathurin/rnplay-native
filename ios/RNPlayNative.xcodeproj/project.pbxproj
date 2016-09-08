@@ -29,6 +29,7 @@
 		4217455C1C88082B00D8C9E7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4217455A1C88082B00D8C9E7 /* Crashlytics.framework */; };
 		4217456C1C882D6000D8C9E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */; };
 		4260E1181C8B106F002DC7FA /* AppLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4260E1171C8B106F002DC7FA /* AppLoadingView.xib */; };
+		4FDA346A1D81D9F000A29C77 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA34691D81D9F000A29C77 /* main.jsbundle */; };
 		78B1CB0CCF1148ED8659E26F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7B75774D7A94F998F53A63B /* Ionicons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A20EB9E64E4041F48E318A11 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1B7A163B1D4CC084B46393 /* libRCTCamera.a */; };
@@ -171,6 +172,7 @@
 		4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		425DE1E51C88018B0050BA5C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4260E1171C8B106F002DC7FA /* AppLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppLoadingView.xib; sourceTree = "<group>"; };
+		4FDA34691D81D9F000A29C77 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		712F85B17D5E4FA2B61AFBE4 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7BA4E230FB4748688092B758 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 		13B07FAE1A68108700A75B9A /* RNPlayNative */ = {
 			isa = PBXGroup;
 			children = (
+				4FDA34691D81D9F000A29C77 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				554162A41C88C12C00F56312 /* AppReloader */,
@@ -621,6 +624,7 @@
 				4217456C1C882D6000D8C9E7 /* LaunchScreen.xib in Resources */,
 				4260E1181C8B106F002DC7FA /* AppLoadingView.xib in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				4FDA346A1D81D9F000A29C77 /* main.jsbundle in Resources */,
 				C2B0DBDA8E134529B66FE19F /* Entypo.ttf in Resources */,
 				D1AA9761407F43148F9FF609 /* EvilIcons.ttf in Resources */,
 				06BD4ADC4C8A4043B5B0FD56 /* FontAwesome.ttf in Resources */,
