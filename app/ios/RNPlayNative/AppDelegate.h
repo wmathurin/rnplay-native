@@ -18,5 +18,6 @@ extern int const kFlipTransitionType;
 @property (nonatomic, strong) UIWindow *window;
 @property (nonatomic, strong) UIViewController *mainViewController;
 @property (nonatomic, strong) UIViewController *appViewController;
+@property (nonatomic, strong) NSDictionary *launchOptions;
 
 @end
