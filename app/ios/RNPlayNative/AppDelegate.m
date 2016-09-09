@@ -1,9 +1,9 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "RCTRootView.h"
-#import "RCTLinkingManager.h"
-#import "RCTBridge.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTRootView.h>
+#import <React/RCTLinkingManager.h>
+#import <React/RCTBridge.h>
+#import <React/RCTEventDispatcher.h>
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 

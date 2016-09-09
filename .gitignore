@@ -1,9 +1,9 @@
 # OSX
 #
 .DS_Store
-ios/*.xcworkspace/
-ios/Podfile.lock
-ios/Pods/
+app/ios/*.xcworkspace/
+app/ios/Podfile.lock
+app/ios/Pods/
 
 # Xcode
 #
@@ -30,11 +30,11 @@ project.xcworkspace
 .idea
 .gradle
 local.properties
-android/app/src/main/res
+#app/android/app/src/main/res
 
 # node.js
 #
-node_modules/
+app/node_modules/
 npm-debug.log
 
 
