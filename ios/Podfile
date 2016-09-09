@@ -5,31 +5,35 @@ target 'RNPlayNative' do
   
 source 'https://github.com/CocoaPods/Specs.git'
 
-#pod 'React', :path => '../node_modules/react-native', :subspecs => [
-#    'ART',
-#    'RCTActionSheet',
-#    'RCTAdSupport',
-#    'RCTCameraRoll',
-#    'RCTGeolocation',
-#    'RCTImage',
-#    'RCTNetwork',
-#    'RCTPushNotification',
-#    'RCTSettings',
-#    'RCTText',
-#    'RCTVibration',
-#    'RCTWebSocket',
-#    'RCTLinkingIOS'
-#]
-#
-#pod 'react-native-camera', path: '../node_modules/react-native-camera'
-#pod 'CodePush', :path => '../node_modules/react-native-code-push'
-#pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
-#
+pod 'Fabric'
+pod 'Crashlytics'
+
+pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'ART',
+    'RCTActionSheet',
+    'RCTAdSupport',
+    'RCTCameraRoll',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    'RCTLinkingIOS'
+]
+
+pod 'react-native-camera', path: '../node_modules/react-native-camera'
+pod 'RNUserDefaultsIOS', path: '../node_modules/react-native-userdefaults-ios'
+pod 'CodePush', :path => '../node_modules/react-native-code-push'
+pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
 pod 'SalesforceSDKCore', :path => '../external/ios'
 pod 'SalesforceNetwork', :path => '../external/ios'
 pod 'SalesforceRestAPI', :path => '../external/ios'
 pod 'SmartStore', :path => '../external/ios'
 pod 'SmartSync', :path => '../external/ios'
-#pod 'SalesforceReact', :path => '../external/ios'
+pod 'SalesforceReact', :path => '../external/ios'
 
 end
