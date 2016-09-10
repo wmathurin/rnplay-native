@@ -1,6 +1,8 @@
 rootProject.name = 'RNPlayNative'
 
 include ':app'
+include ':react.force.base.theme'
+project(':react.force.base.theme').projectDir = new File(rootProject.projectDir, '../node_modules/react.force.base.theme/android')
 include ':react-native-barcodescanner'
 project(':react-native-barcodescanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-barcodescanner/android')
 

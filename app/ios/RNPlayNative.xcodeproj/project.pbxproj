@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C86E763EBE453E8BC920F2 /* SalesforceSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A36B82442740D788C12C09 /* SalesforceSans-Light.ttf */; };
 		06BD4ADC4C8A4043B5B0FD56 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09220CCDE54544B0A0A5E2F8 /* FontAwesome.ttf */; };
+		114748E8E9A14B1AA39C0CAB /* SalesforceDesignSystemIconsUtility.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4410605FC941C4B6AF5C6E /* SalesforceDesignSystemIconsUtility.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2B320601726F4180B6E96A0B /* SalesforceSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 564E934AC4104A6DBC2F49BF /* SalesforceSans-Regular.ttf */; };
+		2ED655011C5041B8BF4C0572 /* SalesforceDesignSystemIconsAction.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6332122E2B54FCD8C28E834 /* SalesforceDesignSystemIconsAction.ttf */; };
 		421745301C8802F800D8C9E7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 425DE1E51C88018B0050BA5C /* libz.tbd */; };
 		421745531C88070C00D8C9E7 /* AppLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4217454D1C88070C00D8C9E7 /* AppLoadingView.m */; };
 		421745551C88070C00D8C9E7 /* AppReloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4217454F1C88070C00D8C9E7 /* AppReloader.m */; };
@@ -21,14 +25,30 @@
 		4260E1181C8B106F002DC7FA /* AppLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4260E1171C8B106F002DC7FA /* AppLoadingView.xib */; };
 		4FDA346A1D81D9F000A29C77 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 4FDA34691D81D9F000A29C77 /* main.jsbundle */; };
 		6FFB37EF09ABB5CF6915C01A /* libPods-RNPlayNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0D2FE89F4A0A9E8022C454 /* libPods-RNPlayNative.a */; };
+		775122EE9A2E4DF3A4FCEAA3 /* libSalesforceBaseTheme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB27504F7F447EB8D02D62D /* libSalesforceBaseTheme.a */; };
 		78B1CB0CCF1148ED8659E26F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7B75774D7A94F998F53A63B /* Ionicons.ttf */; };
+		9278C84F1C0A44C9BD78E6DA /* License-for-SalesforceDesignSystemIcons.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1AC439DA52024C1686527BA5 /* License-for-SalesforceDesignSystemIcons.txt */; };
+		9E52D06B01094D7A9E314870 /* SalesforceDesignSystemIconsCustom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4780D24B9066436BABC1C561 /* SalesforceDesignSystemIconsCustom.ttf */; };
 		A5733308276A4D4E8176E792 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA4E230FB4748688092B758 /* MaterialIcons.ttf */; };
+		A88DEFC13A8640DF899BC17E /* SalesforceSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65DE2F587FD14E1F83DC6DAF /* SalesforceSans-Bold.ttf */; };
+		B568583270DB45009DA5DF9D /* SalesforceDesignSystemIconsStandard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1788E432EF34B80B83388D1 /* SalesforceDesignSystemIconsStandard.ttf */; };
 		C2B0DBDA8E134529B66FE19F /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 168753F0A6EB470787219C73 /* Entypo.ttf */; };
+		C33D92C76AD74E5B8EE38683 /* License-for-SalesforceSans-font.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD7616691C442D9B585218 /* License-for-SalesforceSans-font.txt */; };
 		D1AA9761407F43148F9FF609 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9779337BB9A4D1EA3E103F9 /* EvilIcons.ttf */; };
 		DA03BE98D1F34C12A23E5877 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F1285C81A94FAC86100964 /* Foundation.ttf */; };
 		E5B35BC26AC54E7FA1784284 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4A125FE79A44079B6A52206 /* Octicons.ttf */; };
 		FA98048FE9CE4250AA187A9B /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 712F85B17D5E4FA2B61AFBE4 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F9FC68D1D838978000775FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851559F3380A4FF28A00C765 /* SalesforceBaseTheme.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05E4E6EC1CBDF7BE00899BCA;
+			remoteInfo = SalesforceBaseTheme;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09220CCDE54544B0A0A5E2F8 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
@@ -40,6 +60,9 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNPlayNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNPlayNative/main.m; sourceTree = "<group>"; };
 		168753F0A6EB470787219C73 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		1AC439DA52024C1686527BA5 /* License-for-SalesforceDesignSystemIcons.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "License-for-SalesforceDesignSystemIcons.txt"; path = "../node_modules/react.force.base.theme/Fonts/License-for-SalesforceDesignSystemIcons.txt"; sourceTree = "<group>"; };
+		1BB27504F7F447EB8D02D62D /* libSalesforceBaseTheme.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSalesforceBaseTheme.a; sourceTree = "<group>"; };
+		3FAD7616691C442D9B585218 /* License-for-SalesforceSans-font.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "License-for-SalesforceSans-font.txt"; path = "../node_modules/react.force.base.theme/Fonts/License-for-SalesforceSans-font.txt"; sourceTree = "<group>"; };
 		4217454C1C88070C00D8C9E7 /* AppLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppLoadingView.h; path = RNPlayNative/AppLoadingView.h; sourceTree = "<group>"; };
 		4217454D1C88070C00D8C9E7 /* AppLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppLoadingView.m; path = RNPlayNative/AppLoadingView.m; sourceTree = "<group>"; };
 		4217454E1C88070C00D8C9E7 /* AppReloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppReloader.h; path = RNPlayNative/AppReloader.h; sourceTree = "<group>"; };
@@ -51,13 +74,21 @@
 		4217456B1C882D6000D8C9E7 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		425DE1E51C88018B0050BA5C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4260E1171C8B106F002DC7FA /* AppLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppLoadingView.xib; sourceTree = "<group>"; };
+		4780D24B9066436BABC1C561 /* SalesforceDesignSystemIconsCustom.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SalesforceDesignSystemIconsCustom.ttf; path = ../node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsCustom.ttf; sourceTree = "<group>"; };
 		4FDA34691D81D9F000A29C77 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		564E934AC4104A6DBC2F49BF /* SalesforceSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SalesforceSans-Regular.ttf"; path = "../node_modules/react.force.base.theme/Fonts/SalesforceSans-Regular.ttf"; sourceTree = "<group>"; };
+		65DE2F587FD14E1F83DC6DAF /* SalesforceSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SalesforceSans-Bold.ttf"; path = "../node_modules/react.force.base.theme/Fonts/SalesforceSans-Bold.ttf"; sourceTree = "<group>"; };
 		712F85B17D5E4FA2B61AFBE4 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		7BA4E230FB4748688092B758 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		851559F3380A4FF28A00C765 /* SalesforceBaseTheme.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SalesforceBaseTheme.xcodeproj; path = ../node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseTheme.xcodeproj; sourceTree = "<group>"; };
+		94A36B82442740D788C12C09 /* SalesforceSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SalesforceSans-Light.ttf"; path = "../node_modules/react.force.base.theme/Fonts/SalesforceSans-Light.ttf"; sourceTree = "<group>"; };
 		94F1285C81A94FAC86100964 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		98883575BE90199BD386B0F4 /* Pods-RNPlayNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNPlayNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNPlayNative/Pods-RNPlayNative.release.xcconfig"; sourceTree = "<group>"; };
+		A1788E432EF34B80B83388D1 /* SalesforceDesignSystemIconsStandard.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SalesforceDesignSystemIconsStandard.ttf; path = ../node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsStandard.ttf; sourceTree = "<group>"; };
+		AC4410605FC941C4B6AF5C6E /* SalesforceDesignSystemIconsUtility.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SalesforceDesignSystemIconsUtility.ttf; path = ../node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsUtility.ttf; sourceTree = "<group>"; };
 		B69BA734DD7CB6DF8A7F9D01 /* Pods-RNPlayNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNPlayNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNPlayNative/Pods-RNPlayNative.debug.xcconfig"; sourceTree = "<group>"; };
 		C4A125FE79A44079B6A52206 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		C6332122E2B54FCD8C28E834 /* SalesforceDesignSystemIconsAction.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SalesforceDesignSystemIconsAction.ttf; path = ../node_modules/react.force.base.theme/Fonts/SalesforceDesignSystemIconsAction.ttf; sourceTree = "<group>"; };
 		E9779337BB9A4D1EA3E103F9 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		F7B75774D7A94F998F53A63B /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +102,7 @@
 				4217455B1C88082B00D8C9E7 /* Fabric.framework in Frameworks */,
 				4217455C1C88082B00D8C9E7 /* Crashlytics.framework in Frameworks */,
 				6FFB37EF09ABB5CF6915C01A /* libPods-RNPlayNative.a in Frameworks */,
+				775122EE9A2E4DF3A4FCEAA3 /* libSalesforceBaseTheme.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +123,14 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = RNPlayNative;
+			sourceTree = "<group>";
+		};
+		4F9FC68A1D838978000775FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F9FC68E1D838978000775FB /* libSalesforceBaseTheme.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		554162A41C88C12C00F56312 /* AppReloader */ = {
@@ -114,6 +154,7 @@
 				ACE55141637447BC896A6090 /* Resources */,
 				FF1991DCB78890071713C09F /* Pods */,
 				90220ECFBCE3ED9A82875143 /* Frameworks */,
+				9FF750536C864146AA25E838 /* Libraries */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +176,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9FF750536C864146AA25E838 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				851559F3380A4FF28A00C765 /* SalesforceBaseTheme.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		ACE55141637447BC896A6090 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +198,15 @@
 				7BA4E230FB4748688092B758 /* MaterialIcons.ttf */,
 				C4A125FE79A44079B6A52206 /* Octicons.ttf */,
 				712F85B17D5E4FA2B61AFBE4 /* Zocial.ttf */,
+				1AC439DA52024C1686527BA5 /* License-for-SalesforceDesignSystemIcons.txt */,
+				3FAD7616691C442D9B585218 /* License-for-SalesforceSans-font.txt */,
+				C6332122E2B54FCD8C28E834 /* SalesforceDesignSystemIconsAction.ttf */,
+				4780D24B9066436BABC1C561 /* SalesforceDesignSystemIconsCustom.ttf */,
+				A1788E432EF34B80B83388D1 /* SalesforceDesignSystemIconsStandard.ttf */,
+				AC4410605FC941C4B6AF5C6E /* SalesforceDesignSystemIconsUtility.ttf */,
+				65DE2F587FD14E1F83DC6DAF /* SalesforceSans-Bold.ttf */,
+				94A36B82442740D788C12C09 /* SalesforceSans-Light.ttf */,
+				564E934AC4104A6DBC2F49BF /* SalesforceSans-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -193,7 +251,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 720;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
@@ -212,12 +270,28 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F9FC68A1D838978000775FB /* Products */;
+					ProjectRef = 851559F3380A4FF28A00C765 /* SalesforceBaseTheme.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNPlayNative */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4F9FC68E1D838978000775FB /* libSalesforceBaseTheme.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSalesforceBaseTheme.a;
+			remoteRef = 4F9FC68D1D838978000775FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
@@ -236,6 +310,15 @@
 				A5733308276A4D4E8176E792 /* MaterialIcons.ttf in Resources */,
 				E5B35BC26AC54E7FA1784284 /* Octicons.ttf in Resources */,
 				FA98048FE9CE4250AA187A9B /* Zocial.ttf in Resources */,
+				9278C84F1C0A44C9BD78E6DA /* License-for-SalesforceDesignSystemIcons.txt in Resources */,
+				C33D92C76AD74E5B8EE38683 /* License-for-SalesforceSans-font.txt in Resources */,
+				2ED655011C5041B8BF4C0572 /* SalesforceDesignSystemIconsAction.ttf in Resources */,
+				9E52D06B01094D7A9E314870 /* SalesforceDesignSystemIconsCustom.ttf in Resources */,
+				B568583270DB45009DA5DF9D /* SalesforceDesignSystemIconsStandard.ttf in Resources */,
+				114748E8E9A14B1AA39C0CAB /* SalesforceDesignSystemIconsUtility.ttf in Resources */,
+				A88DEFC13A8640DF899BC17E /* SalesforceSans-Bold.ttf in Resources */,
+				02C86E763EBE453E8BC920F2 /* SalesforceSans-Light.ttf in Resources */,
+				2B320601726F4180B6E96A0B /* SalesforceSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +428,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseTheme",
 				);
 				INFOPLIST_FILE = RNPlayNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RNPlayNative\"",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rnplay.playground;
 				PRODUCT_NAME = RNPlayNative;
@@ -368,9 +456,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseTheme",
 				);
 				INFOPLIST_FILE = RNPlayNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RNPlayNative\"",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rnplay.playground;
 				PRODUCT_NAME = RNPlayNative;
@@ -422,6 +515,7 @@
 					"$(SRCROOT)/../node_modules/react-native-code-push/**",
 					"$(SRCROOT)/../node_modules/react-native-userdefaults-ios/RNUserDefaultsIOS",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseTheme",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -467,6 +561,7 @@
 					"$(SRCROOT)/../node_modules/react-native-code-push/**",
 					"$(SRCROOT)/../node_modules/react-native-userdefaults-ios/RNUserDefaultsIOS",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react.force.base.theme/ios/SalesforceBaseTheme/SalesforceBaseTheme",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
